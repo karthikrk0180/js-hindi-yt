@@ -11,8 +11,8 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id)
-console.log(anotherId)
+// console.log(id)
+// console.log(anotherId)
 
 // Reference (Non primitive)
 
@@ -25,7 +25,34 @@ let myObj = {
 }
 
 const myFunction = function () {
-    console.log("Hello World")
+    // console.log("Hello World")
 }
 
-console.log(typeof(myFunction))
+// console.log(typeof(myFunction))
+
+// ************************************************************************************************************
+
+// stack (primitive data types), Heap(Non primitive)
+
+let myYoutubeName = "karthik.com"
+
+let anothername = myYoutubeName
+anothername = "chaiaurcode"
+
+console.log(myYoutubeName)
+console.log(anothername);
+
+let user = {
+    email: "user@google.com",
+    upi: "8989@ybl"
+}
+
+let userTwo = user
+
+userTwo.email = "medicodio.com"
+
+console.log(user.email);
+
+
+// stack => it copies
+// heap => same reference
